@@ -413,3 +413,61 @@ section:nth-of-type(10) {
     padding: 22px;
   }
 }
+
+/* 空欄に見える問題の修正 */
+.visual {
+  color: #ffffff;
+}
+
+.visual h2 {
+  color: #ffffff;
+}
+
+.visual p {
+  color: #e2e8f0;
+}
+
+/* 全体の行間・余白調整 */
+section {
+  padding: 56px 24px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+h2 {
+  margin-bottom: 18px;
+}
+
+.card p {
+  line-height: 1.6;
+}
+
+.hero {
+  min-height: 82vh;
+  padding: 80px 24px;
+}
+
+.hero h1 {
+  line-height: 1.12;
+  margin-bottom: 18px;
+}
+
+.lead {
+  line-height: 1.65;
+}
+
+.grid {
+  gap: 18px;
+}
+
+.card {
+  padding: 24px;
+}
+
+.visual,
+.offer {
+  padding: 56px 24px;
+}
