@@ -2,37 +2,49 @@ export default function Page() {
   return (
     <main>
 <section className="hero">
+  <div className="hero-bg" />
+
   <div className="hero-inner">
-    <p className="badge">Googleマップ集客・MEO対策 無料ウェビナー</p>
+    <div className="hero-copy">
+      <p className="badge">Googleマップ集客・MEO対策 無料ウェビナー</p>
 
-    <h1>
-      SNSを頑張っても集客できない店舗へ。
-      <br />
-      <span>Googleマップから“今すぐ客”を増やす</span>
-      <br />
-      MEO集客戦略を公開
-    </h1>
+      <h1>
+        SNSを頑張っても集客できない店舗へ。
+        Googleマップから“今すぐ客”を増やすMEO戦略
+      </h1>
 
-    <p className="lead">
-      広告費を増やさず、フォロワー数にも頼らず、
-      「近くで探しているお客様」に選ばれる店舗になるための
-      Googleビジネスプロフィール改善ロードマップを無料公開します。
-    </p>
+      <p className="lead">
+        広告費やフォロワー数に頼らず、近くで探しているお客様に選ばれる店舗へ。
+        Googleビジネスプロフィール改善のロードマップを無料公開します。
+      </p>
 
-    <div className="hero-points">
-      <span>参加無料</span>
-      <span>オンライン開催</span>
-      <span>初心者OK</span>
+      <div className="hero-points">
+        <span>参加無料</span>
+        <span>オンライン開催</span>
+        <span>初心者OK</span>
+      </div>
+
+      <a className="cta" href="#entry">無料ウェビナーに申し込む</a>
+
+      <p className="note">参加者限定：Googleマップ改善チェックリスト付き</p>
     </div>
 
-    <a className="cta" href="#entry">無料ウェビナーに申し込む</a>
-
-    <p className="note">
-      参加者限定：Googleマップ改善チェックリスト付き
-    </p>
+    <div className="map-card">
+      <div className="map-top">Googleマップ検索</div>
+      <div className="search-box">近くの美容室　口コミ</div>
+      <div className="store-card active">
+        <strong>あなたの店舗</strong>
+        <p>★★★★★ 4.8　口コミ124件</p>
+        <span>「口コミを見て来ました」</span>
+      </div>
+      <div className="store-card">
+        <strong>競合店舗A</strong>
+        <p>★★★★☆ 4.1　口コミ32件</p>
+      </div>
+      <div className="pin">📍</div>
+    </div>
   </div>
 </section>
-
       <section className="visual">
         <h2>理想の未来</h2>
         <p>
