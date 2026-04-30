@@ -45,14 +45,6 @@ export default function Page() {
     </div>
   </div>
 </section>
-      <section className="visual">
-        <h2>理想の未来</h2>
-        <p>
-          朝、スマホを見ると「Googleマップを見て来ました」という予約通知。
-          口コミを見た新規客が来店し、SNS投稿に追われず、広告費にも依存しない。
-          そんな店舗集客の土台を作ることが目的です。
-        </p>
-      </section>
 
       <section>
         <h2>お客様の声</h2>
