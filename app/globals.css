@@ -2,152 +2,289 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   color: #102033;
-  background: #f7fafc;
+  background: #f5f7fb;
 }
 
 main {
-  max-width: 1080px;
-  margin: 0 auto;
+  width: 100%;
+  overflow: hidden;
 }
 
 section {
-  padding: 64px 24px;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 80px 24px;
 }
 
 .hero {
-  padding: 88px 24px;
-  background: linear-gradient(135deg, #e8f5ff, #ffffff);
-  border-radius: 0 0 32px 32px;
+  max-width: none;
+  padding: 110px 24px 96px;
+  text-align: center;
+  color: #fff;
+  background:
+    radial-gradient(circle at top right, rgba(34, 197, 94, 0.35), transparent 32%),
+    linear-gradient(135deg, #0f172a 0%, #123b32 55%, #0f172a 100%);
 }
 
 .badge {
   display: inline-block;
-  background: #dff7ea;
-  color: #087a3d;
-  padding: 8px 14px;
+  padding: 10px 18px;
   border-radius: 999px;
-  font-weight: 700;
+  background: rgba(255,255,255,0.14);
+  border: 1px solid rgba(255,255,255,0.28);
+  font-weight: 800;
+  color: #bbf7d0;
 }
 
 h1 {
+  max-width: 960px;
+  margin: 24px auto;
   font-size: clamp(34px, 6vw, 64px);
-  line-height: 1.15;
-  margin: 24px 0;
+  line-height: 1.12;
+  letter-spacing: -0.04em;
 }
 
 h2 {
-  font-size: clamp(26px, 4vw, 40px);
-  margin-bottom: 20px;
+  font-size: clamp(28px, 4vw, 44px);
+  line-height: 1.25;
+  margin: 0 0 28px;
+  letter-spacing: -0.03em;
 }
 
 h3 {
-  margin-bottom: 10px;
+  font-size: 21px;
+  margin: 0 0 12px;
+}
+
+p {
+  font-size: 17px;
+  line-height: 1.9;
 }
 
 .lead {
-  font-size: 20px;
-  max-width: 780px;
+  max-width: 760px;
+  margin: 0 auto;
+  font-size: clamp(18px, 2.5vw, 24px);
+  color: #e2e8f0;
 }
 
 .cta {
   display: inline-block;
-  margin-top: 24px;
-  padding: 16px 28px;
-  background: #0f7a4f;
+  margin-top: 32px;
+  padding: 18px 34px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #22c55e, #16a34a);
   color: #fff;
-  border-radius: 12px;
   text-decoration: none;
-  font-weight: 800;
-  box-shadow: 0 8px 24px rgba(15, 122, 79, 0.25);
+  font-size: 19px;
+  font-weight: 900;
+  box-shadow: 0 18px 36px rgba(34, 197, 94, 0.35);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 22px 42px rgba(34, 197, 94, 0.45);
 }
 
 .note {
-  margin-top: 12px;
-  color: #52616f;
+  margin-top: 16px;
+  color: #64748b;
+  font-size: 15px;
+}
+
+.hero .note {
+  color: #d1fae5;
 }
 
 .grid {
   display: grid;
-  gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 .card {
   background: #fff;
-  padding: 24px;
-  border-radius: 20px;
-  box-shadow: 0 8px 24px rgba(16, 32, 51, 0.08);
+  padding: 28px;
+  border-radius: 24px;
+  box-shadow: 0 12px 32px rgba(15, 23, 42, 0.08);
+  border: 1px solid #e5e7eb;
+}
+
+.card strong {
+  display: block;
+  color: #0f7a4f;
+  margin-bottom: 8px;
+  font-size: 15px;
 }
 
 .avatar {
-  width: 48px;
-  height: 48px;
-  background: #eef6ff;
-  border-radius: 50%;
+  width: 54px;
+  height: 54px;
   display: grid;
   place-items: center;
-  margin-bottom: 12px;
+  border-radius: 50%;
+  background: #dcfce7;
+  font-size: 24px;
+  margin-bottom: 18px;
 }
 
 .quote {
-  font-weight: 700;
-  color: #0f7a4f;
+  margin-top: 18px;
+  padding: 16px;
+  background: #f0fdf4;
+  border-left: 5px solid #22c55e;
+  border-radius: 12px;
+  color: #166534;
+  font-weight: 800;
 }
 
 .visual,
 .offer {
-  background: #102033;
+  max-width: 1080px;
+  margin: 40px auto;
+  border-radius: 32px;
+  background:
+    radial-gradient(circle at top left, rgba(34,197,94,0.25), transparent 30%),
+    linear-gradient(135deg, #102033, #0f172a);
   color: #fff;
-  border-radius: 28px;
-  margin: 32px 24px;
+  box-shadow: 0 20px 48px rgba(15, 23, 42, 0.22);
+}
+
+.visual p,
+.offer p {
+  color: #e2e8f0;
+}
+
+.list {
+  padding: 0;
+  list-style: none;
+}
+
+.list li {
+  position: relative;
+  margin-bottom: 16px;
+  padding: 18px 20px 18px 52px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.list li::before {
+  content: "✓";
+  position: absolute;
+  left: 20px;
+  top: 16px;
+  color: #16a34a;
+  font-weight: 900;
 }
 
 .steps {
   display: grid;
-  gap: 16px;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  margin-top: 32px;
 }
 
 .steps div {
   background: #fff;
-  padding: 24px;
-  border-radius: 18px;
-  border-left: 6px solid #0f7a4f;
+  padding: 30px;
+  border-radius: 24px;
+  border-top: 6px solid #22c55e;
+  box-shadow: 0 12px 32px rgba(15, 23, 42, 0.08);
 }
 
 .steps span {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: #16a34a;
   font-weight: 900;
-  color: #0f7a4f;
+  letter-spacing: 0.05em;
 }
 
-.list li {
-  margin-bottom: 12px;
-  font-size: 18px;
+.offer {
+  text-align: center;
+  padding: 88px 24px;
+}
+
+.offer .cta {
+  background: linear-gradient(135deg, #facc15, #f97316);
+  color: #111827;
+  box-shadow: 0 18px 36px rgba(249, 115, 22, 0.35);
 }
 
 .limit {
-  font-weight: 800;
-  color: #ffef9a;
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: rgba(250, 204, 21, 0.15);
+  color: #fde68a !important;
+  font-weight: 900;
 }
 
 .faq {
   background: #fff;
-  padding: 28px;
-  border-radius: 20px;
+  padding: 36px;
+  border-radius: 28px;
+  box-shadow: 0 12px 32px rgba(15, 23, 42, 0.08);
+}
+
+.faq h3 {
+  margin-top: 28px;
+  padding-top: 24px;
+  border-top: 1px solid #e5e7eb;
+  color: #0f7a4f;
+}
+
+.faq h3:first-child {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: none;
+}
+
+section:nth-of-type(2),
+section:nth-of-type(4),
+section:nth-of-type(6),
+section:nth-of-type(8),
+section:nth-of-type(10) {
+  background: transparent;
 }
 
 @media (max-width: 640px) {
   section {
-    padding: 44px 18px;
+    padding: 56px 18px;
   }
 
   .hero {
-    padding: 64px 18px;
+    padding: 78px 18px 72px;
+  }
+
+  h1 {
+    font-size: 34px;
+  }
+
+  h2 {
+    font-size: 28px;
   }
 
   .cta {
     width: 100%;
-    text-align: center;
     box-sizing: border-box;
+    text-align: center;
+  }
+
+  .visual,
+  .offer {
+    margin: 24px 16px;
+    border-radius: 24px;
+  }
+
+  .card,
+  .faq,
+  .steps div {
+    padding: 22px;
   }
 }
